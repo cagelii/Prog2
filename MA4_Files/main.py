@@ -42,8 +42,6 @@ def nVolume(n,d):
     #print(f'Approximate volume of a {d}-dimensional ball is: {approx}. The exact volume is: {exact}')
     return approx
 
-def nVolumeP(n,d):
-    pass
 
 def main():
     #1.1
@@ -73,11 +71,11 @@ def main():
     time = round(end - start,3)
     print(f'Time for parallel: {time}')
 
-    # start = pc()
-    # nVolume(10000000,11)
-    # end = pc()
-    # time = round(end - start,3)
-    # print(f'Time for regular: {time}')
+    start = pc()
+    nVolume(10000000,11)
+    end = pc()
+    time = round(end - start,3)
+    print(f'Time for regular: {time}')
 
 if __name__ == "__main__":
     main()
