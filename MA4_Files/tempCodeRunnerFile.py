@@ -1,1 +1,1 @@
-plt.figure(j)
+from person import Person
