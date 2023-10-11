@@ -10,7 +10,6 @@ def fib_py(n):
 		return n
 	else:
 		return(fib_py(n-1) + fib_py(n-2))
-	
 
 
 @njit
@@ -25,7 +24,7 @@ def main():
 	print(f.get())
 	f.set(7)
 	print(f.get())
-	n = list(range(30,35))
+	n = list(range(20,46))
 	times_py = []
 	times_numba = []
 	times_cpp = []
@@ -45,12 +44,21 @@ def main():
 		f.fib()
 		stop = pc()
 		times_cpp.append(stop-start)
+		
+		print(i)
 
 	fig,ax = plt.subplots()
 	ax.plot(n,times_py,label='Pure python')
 	ax.plot(n,times_numba,label='Numba')
 	ax.plot(n,times_cpp, label='cpp')
 	ax.legend()
+	plt.xlabel('n')
+	plt.ylabel('Time (s)')
 	plt.savefig("times.png")
+
+	#f.set(47)
+	#print(fib_numba(47))
+	#print(f.fib())
+
 if __name__ == '__main__':
 	main()
