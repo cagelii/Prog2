@@ -1,3 +1,11 @@
+"""
+Solutions to module 4
+Student: Carl Agelii
+Mail: calle.agelii01@gmail.com
+Reviewed by: Naser
+Reviewed date:2023-10-11
+"""
+
 #include <cstdlib>
 // Person class 
 

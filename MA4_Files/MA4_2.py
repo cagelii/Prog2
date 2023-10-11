@@ -1,3 +1,11 @@
+"""
+Solutions to module 4
+Student: Carl Agelii
+Mail: calle.agelii01@gmail.com
+Reviewed by: Naser
+Reviewed date:2023-10-11
+"""
+
 #!/usr/bin/env python3.9
 
 from person import Person
@@ -56,9 +64,9 @@ def main():
 	plt.ylabel('Time (s)')
 	plt.savefig("times.png")
 
-	#f.set(47)
-	#print(fib_numba(47))
-	#print(f.fib())
+	f.set(47)
+	print(fib_numba(47))
+	print(f.fib())
 
 if __name__ == '__main__':
 	main()
